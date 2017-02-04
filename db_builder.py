@@ -1,7 +1,8 @@
 from pymongo import MongoClient
 
-server = MongoClient('127.0.0.1')
-#server = MongoClient('149.89.160.100')
+#server = MongoClient('127.0.0.1')
+server = MongoClient('149.89.160.100')
+
 db = server.firstDB
 col = db.students
 
