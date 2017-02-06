@@ -8,5 +8,14 @@ col = db.students
 
 cur = col.find()
 
-for i in cur:
-    
+for student in cur:
+    total = 0
+    ctr = 0
+    for course in student['courses']:
+        total += course[1]
+        ctr += 1
+
+    print "Name: %s"%(student['name'])
+    print "ID: %d"%(student['id'])
+    print "Average: %d"%(float(total) / float(ctr))
+    print
