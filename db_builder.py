@@ -3,7 +3,7 @@ from pymongo import MongoClient
 #server = MongoClient('127.0.0.1')
 server = MongoClient('149.89.160.100')
 
-db = server.firstDB
+db = server.RefinedStorage
 col = db.students
 
 f1 = open("peeps.csv", "r")
